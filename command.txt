@@ -15,3 +15,34 @@ Status output does not show you any information regarding the committed project 
 git add . -->add all files/folders in current add to the git repository
 
 git add [file/folder_name] --> add individual file in repository
+
+git commit --> captures a snapshot of the project's currently staged changes. 
+Committed snapshots can be thought of as “safe” versions of a 
+project—Git will never change them unless you explicitly ask it to
+
+git commit -m 'messgae' --> -m stands for message which will appear after 
+once file is saved
+
+git restore --staged [file/folder_name] --> it will restore previous version of file
+
+git log --> shows the commit history
+
+git reset [hash_ID] --> it will restore the deleted file to state where it was deleted.
+
+git stash --> Git stash is a built-in command with the distributed Version control tool in Git that 
+locally stores all the most recent changes in a workspace and resets the state of the workspace to the prior commit state. 
+A user can retrieve all files put into the stash with the git stash pop and git stash apply commands.
+
+git stash clear --> This command enables you to look all stashed changes: git stash list. 
+Here is the following command use it to clear all of your stashed changes:
+
+git remote add origin [reposiotry_url_name] -->
+1.Open .
+2.Change the current working directory to your local project.
+3.Change your remote's URL from HTTPS to SSH with the git remote set-url command. 
+$ git remote set-url origin git@github.com:USERNAME/REPOSITORY.git.
+4.Verify that the remote URL has changed.
+
+git remote -v --> shows all URL attached to the folder/ current repository
+
+git push orign master --> it will push the file into repository
